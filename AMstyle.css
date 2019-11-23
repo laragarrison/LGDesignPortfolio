@@ -1,5 +1,5 @@
 body {
-    background-image: url('wood.jpg');
+    background-image: url('media/wood.jpg');
     background-attachment: fixed;
     background-size: cover;
     }
@@ -54,7 +54,7 @@ li {
 }
 
 .center {
-    text-align: center;
+    display: flex;
 }
 
 .centerpic {
