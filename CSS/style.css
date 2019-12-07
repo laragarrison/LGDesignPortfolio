@@ -1,0 +1,16 @@
+.topnav {
+    background-color: black;
+    height: 200px;
+    width: 100px;
+}
+
+
+
+.footer {
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    color: red;
+    position: fixed;
+    bottom: 0px;
+}
