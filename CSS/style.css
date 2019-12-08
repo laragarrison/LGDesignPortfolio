@@ -1,16 +1,234 @@
-.topnav {
-    background-color: black;
-    height: 200px;
-    width: 100px;
+body {
+    color: whitesmoke;
+    height: auto;
+    background-color: #383735;
 }
 
+
+h1 {
+    /* im lara*/
+}
+
+h2 {
+    /* bar title, header nav*/
+    font-size: 24px;
+}
+
+h3 {
+    /* quotes */
+}
+
+p {
+    /* text, footer*/
+    font-size: 18px;
+    width: 70%;
+    margin: 90px auto;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+a {
+    margin: 15px;
+}
+
+/* Components Below -----------------*/
+
+.backgroundpic {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.wood {
+    background-image: url(../Media/bgabout.jpg);
+
+}
+
+.headerbar {
+    width: 60%;
+    background-color: #21201C;
+    border-bottom: 7px solid #707070;
+    margin: 30px 30px 30px 0px;
+    padding: 15px;
+
+}
+
+.headerbar h2 {
+    margin-left: 15%;
+}
+
+.grayhoverbox {
+
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: 70px auto;
+    padding: 50px 80px;
+    background-color: #212121;
+    border: 3px solid #383735;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    
+    align-items: center;
+}
+
+.block {
+    display: block;
+    height: max-content;
+}
+.quote {
+    display: block;
+    text-align: center;
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+.quotefrom {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Moodboard Crap Below -----------------*/
+
+.moodboard-container {
+    background-color: #21201C;
+    padding: 60px 0px;
+
+    margin: 0;
+}
+
+.row {
+    justify-content: center;
+}
+
+.cardContainer {
+    
+    justify-items: center;
+    margin: 43px;
+    padding: 0px;
+  }
+  
+.card {
+  width: 100%;
+  max-width: 260px;
+  max-height: 260px;
+  padding-top: 75%;
+  padding-right: 0px;
+  border: 3px solid gray;
+  background-image: url("../Media/texture-3739393_1920.jpg");
+  }
+
+
+/* Interests Crap Below ----------------*/
+
+.interests {
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+}
+
+/* Listening Crap Below ----------------*/
+
+.listeningto {
+    height: auto;
+}
+
+.albuminfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    margin: 50px;
+}
+
+
+.grayhoverbox p {
+    width: 166px;
+    padding: 5px;
+}
+
+.albumcontainer {
+    background-color: #B2B2B2;
+    border: 3px solid #383735;
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 5px auto 5px auto;
+}
+
+.music {
+    background-image: url(../Media/ninalbum.jpg);
+    background-size: contain;
+    height: 190px;
+    align-self: center;
+    justify-self: center;
+}
+
+.book {
+    background-image: url(../Media/moralanimal.jpg);
+    height: 182px;
+    background-size: contain;
+    align-self: center;
+    justify-self: center;
+
+}
+
+/* Navigation Crap Below ----------------*/
+.navbar {
+    background-color:#21201C;
+
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
 
 
 .footer {
-    background-color: black;
-    height: 150px;
+    position: absolute;
     width: 100%;
-    color: red;
-    position: fixed;
-    bottom: 0px;
+    bottom: -1000px;
 }
+
+.navlogo {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    
+}
+
+.navbar-brand {
+    color: green;
+    padding-left: 15px;
+}
+
+.icon {
+    width: 30px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 100px;    /* Footer height */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;            /* Footer height */
+  }
