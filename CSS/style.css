@@ -95,6 +95,12 @@ a {
     font-style: italic;
 }
 
+/* Intro Crap Below -----------------*/
+
+.intro {
+    padding-bottom: 60px;
+}
+
 /* Moodboard Crap Below -----------------*/
 
 .moodboard-container {
