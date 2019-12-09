@@ -95,6 +95,13 @@ a {
     font-style: italic;
 }
 
+/* Top Pic Crap Below -----------------*/
+
+.toppic {
+    height: 500px;
+}
+
+
 /* Intro Crap Below -----------------*/
 
 .intro {
