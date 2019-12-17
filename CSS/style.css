@@ -1,3 +1,8 @@
+/* --------------------------------> DEFINITIONS <-------------------------------- */
+/* Section Start */
+
+/* Definitions Crap Below ----------------*/
+
 body {
     color: whitesmoke;
     height: auto;
@@ -5,27 +10,26 @@ body {
 }
 
 
-h1 {
-    /* im lara*/
+h1 {    /* im lara*/
+    font-family: Montserrat;
 }
 
-h2 {
-    /* bar title, header nav*/
+h2 {    /* bar title, header nav*/
     font-size: 24px;
+    font-family: Montserrat;
 }
 
-h3 {
-    /* quotes */
+h3 {    /* quotes */
+
 }
 
-p {
-    /* text, footer*/
+p {    /* text, footer*/
     font-size: 18px;
+    font-family: Baskerville;
     width: 70%;
     margin: 90px auto;
     margin-block-start: 0;
     margin-block-end: 0;
-
 }
 
 a {
@@ -41,81 +45,98 @@ a {
     overflow: hidden;
 }
 
-.wood {
-    background-image: url(../Media/bgabout.jpg);
-
-}
-
 .headerbar {
     width: 60%;
     background-color: #21201C;
     border-bottom: 7px solid #707070;
-    margin: 30px 30px 30px 0px;
+    margin-bottom: 50px;
     padding: 15px;
-
 }
 
 .headerbar h2 {
     margin-left: 15%;
 }
 
-.grayhoverbox {
-
-    width: 600px;
-    height: 400px;
-    display: block;
-    margin: 70px auto;
-    padding: 50px 80px;
+.graybox {
     background-color: #212121;
     border: 3px solid #383735;
     border-radius: 10px;
-
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    
-    align-items: center;
 }
 
-.block {
+/* --------------------------------> ABOUT PAGE <-------------------------------- */
+/* Section Start */
+
+.page-about {     /* specify here to clean up */
+
+}
+
+.wood {
+    background-image: url(../Media/bgabout.jpg);
+}
+
+.sec-aboutintro {
+    height: auto;
     display: block;
-    height: max-content;
-}
-.quote {
-    display: block;
-    text-align: center;
-    width: 70%;
-    min-width: 300px;
-    margin: auto;
-    padding: 70px 0;
 }
 
-.quotefrom {
-    text-align: right;
-    font-style: italic;
+.sec-history {
+    padding: 70px 0px;
 }
 
-/* Top Pic Crap Below -----------------*/
-
-.toppic {
-    height: 500px;
-}
-
-
-/* Intro Crap Below -----------------*/
-
-.intro {
-    padding-bottom: 60px;
-}
-
-/* Moodboard Crap Below -----------------*/
-
-.moodboard-container {
+.sec-moodboard {
     background-color: #21201C;
     padding: 60px 0px;
 
     margin: 0;
 }
+
+.sec-quote1 {     /* specify here to clean up */
+
+}
+
+.sec-interests {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+}
+
+.sec-quote2 {     /* specify here to clean up */
+
+}
+
+.sec-listening {     /* specify here to clean up */
+    
+}
+
+/* About Intro Crap Below -----------------*/
+
+.topcontainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px 300px;
+    grid-template-areas: 
+    "toptext toppic" 
+    "toptext toptext";
+}
+
+.toptext {
+    grid-area: toptext;
+    display: flex;
+    background-color: #212121;
+}
+
+.toppic {
+    grid-area: toppic;
+    width: 50%;
+    height: auto;
+}
+
+/* History Crap Below -----------------*/
+
+
+/* Moodboard Crap Below -----------------*/
 
 .row {
     justify-content: center;
@@ -139,32 +160,70 @@ a {
   }
 
 
+/* Quote 1 Crap Below ----------------*/
+
+.sec-quote1 h3 {
+    display: block;
+    text-align: center;
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+.quotefrom {
+    text-align: right;
+    font-style: italic;
+}
+
 /* Interests Crap Below ----------------*/
 
-.interests {
-    display: block;
+.interest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+}
+
+.sec-interests .graybox {
     width: 100%;
-    height: 300px;
-    padding-top: 50px;
+    max-width: 400px;
+    height: 50px;
+    margin: auto;
+
+}
+
+/* Quote 2 Crap Below ----------------*/
+
+.sec-quote2 h3 {
+    display: block;
+    text-align: center;
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    padding: 70px 0;
 }
 
 /* Listening Crap Below ----------------*/
 
-.listeningto {
-    height: auto;
+.sec-listening .graybox {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    display: flex;
 }
 
 .albuminfo {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0px;
     text-align: center;
     margin: 50px;
 }
 
 
-.grayhoverbox p {
+.graybox p {
     width: 166px;
     padding: 5px;
 }
@@ -196,7 +255,68 @@ a {
 
 }
 
+/* --------------------------------> WORK PAGE <-------------------------------- */
+/* Section Start */
+
+.page-work {
+    
+}
+
+.trees {
+    background-image: url(../Media/bgwork.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.sec-workintro {
+    background-color: #21201C;
+    height: 700px;
+}
+
+.sec-projects {
+
+}
+
+/* Work Intro Crap Below ----------------*/
+
+.pic-workintro {
+    width: 60%;
+    float: right;
+    opacity: 0.39;;
+
+}
+
+/* Projects Crap Below ----------------*/
+
+.sec-projects .headerbar {
+    position: absolute;
+    left: 0px;
+}
+
+.projects-grid {
+    padding-bottom: 50px;
+    width: 100vw;
+}
+
+.projects-grid .graybox {
+    width: 70%;
+    max-width: 1000px;
+    min-width: 300px;
+    height: 500px;
+    margin: 30px auto;
+}
+ 
+#projects-more {
+    margin-bottom: 40px;
+}
+
+
+/* --------------------------------> NAV CRAP <-------------------------------- */
+/* Section Start */
+
 /* Navigation Crap Below ----------------*/
+
 .navbar {
     background-color:#21201C;
 

@@ -1,0 +1,58 @@
+/* Top Pic Crap Below -----------------*/
+
+b {
+    color: blue;
+}
+
+h3 {
+    color: blue;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+}
+
+.backgroundpic {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.2;
+}
+
+.wood {
+    background-image: url(/Media/bgabout.jpg);
+    z-index: -20;
+}
+
+.sectop {
+    width: 100%;
+    height: 1000px;
+}
+
+.topcontainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: 
+    "toptext toppic"
+    "toptext toptext";
+    border: 2px solid red;
+}
+
+.toptext {
+    grid-area: toptext;
+    background-color: #212121;
+    display: block;
+
+}
+
+.toppic {
+    grid-area: toppic;
+    width: 50%;
+   display: block;
+
+}
