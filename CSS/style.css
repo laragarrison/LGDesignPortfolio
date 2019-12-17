@@ -33,7 +33,7 @@ p {    /* text, footer*/
 }
 
 a {
-    margin: 15px;
+    
 }
 
 /* Components Below -----------------*/
@@ -319,7 +319,11 @@ a {
 
 .navbar {
     background-color:#21201C;
+}
 
+.navbar a {
+    font-size: 24px;
+    margin: 0px 25px;
 }
 
 .navbar-nav {
