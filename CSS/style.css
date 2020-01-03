@@ -7,6 +7,7 @@ body {
     color: whitesmoke;
     height: auto;
     background-color: #383735;
+    font-size: 20px;
 }
 
 
@@ -15,7 +16,7 @@ h1 {    /* im lara*/
 }
 
 h2 {    /* bar title, header nav*/
-    font-size: 24px;
+    font-size: 1.2rem;
     font-family: Montserrat;
 }
 
@@ -24,7 +25,7 @@ h3 {    /* quotes */
 }
 
 p {    /* text, footer*/
-    font-size: 18px;
+    font-size: 1.2rem;
     font-family: Baskerville;
     width: 70%;
     margin: 90px auto;
@@ -275,6 +276,7 @@ a {
 }
 
 .sec-projects {
+    padding: 70px 0px 40px 0px;
 
 }
 
@@ -295,11 +297,11 @@ a {
 }
 
 .projects-grid {
-    padding-bottom: 50px;
-    width: 100vw;
+    width: 100%;
+    margin-top: 128px;
 }
 
-.projects-grid .graybox {
+.projects-grid .project {
     width: 70%;
     max-width: 1000px;
     min-width: 300px;
@@ -308,9 +310,19 @@ a {
 }
  
 #projects-more {
-    margin-bottom: 40px;
+    width: 70%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 30px auto;
 }
 
+#projects-more .graybox {
+    width: 45%;
+    min-width: 150px;
+    margin-left: auto;
+    /* background-color: rgba(33, 33, 33, 0.9); */
+    opacity: 0.7;
+}
 
 /* --------------------------------> NAV CRAP <-------------------------------- */
 /* Section Start */
@@ -322,7 +334,7 @@ a {
 }
 
 .navbar a {
-    font-size: 24px;
+    font-size: 1.2rem;
     margin: 0px 25px;
 }
 
@@ -369,3 +381,13 @@ a {
     width: 100%;
     height: 100px;            /* Footer height */
   }
+
+/* --------------------------------> MEDIA QUERIES GODDAMNIT <-------------------------------- */
+/* Section Start */
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 36px;
+    }
+
+}

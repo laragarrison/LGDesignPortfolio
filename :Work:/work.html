@@ -2,6 +2,16 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155286733-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155286733-1');
+</script>
+
     <title>Work</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -41,11 +51,12 @@
                 </div>
 
                 <section class="sec-projects">
-                    <div class="headerbar">
-                        <h3>Projects</h3>
-                    </div>
+                        <div class="headerbar">
+                                <h3>Projects</h3>
+                            </div>
 
-                    <div class="projects-grid graybox container-xl">
+                    <div class="projects-grid">
+                        
                         <div class="graybox project">
                             <h3>project name</h3>
                             <p>project description</p>
@@ -62,8 +73,10 @@
                             <h3>project name</h3>
                             <p>project description</p>
                         </div>
-                        <div id="projects-more" class="graybox">
-                            <p>More to come...</p>
+                        <div id="projects-more">
+                            <div class="graybox">
+                                <p>More to come...</p>
+                            </div>
                         </div>
                     </div>
                 </section>
