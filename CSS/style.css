@@ -293,7 +293,7 @@ a {
 }
 
 .sec-projects {
-    padding: 40px 0px 40px 0px;
+    padding: 136px 0px 40px 0px;
 
 }
 
@@ -369,6 +369,8 @@ a {
 
 .navbar {
     background-color:#21201C;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar a {
