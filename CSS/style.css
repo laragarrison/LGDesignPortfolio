@@ -60,9 +60,6 @@ a {
     padding-left: 5%;
 }
 
-/* .headerbar h2 {
-    margin-left: 15%;
-} */
 
 .graybox {
     background-color: #21201c;
@@ -83,6 +80,8 @@ a {
 
 }
 
+
+
 /* --------------------------------> ABOUT PAGE <-------------------------------- */
 /* Section Start */
 
@@ -96,11 +95,11 @@ a {
 
 .sec-aboutintro {
     padding-top: 96px;
-    height: 700px;
     display: block;
+    display: flex;
 }
 
-.sec-history {
+.sec-skills {
     padding: 70px 0px;
 }
 
@@ -136,22 +135,13 @@ a {
 
 /* About Intro Crap Below -----------------*/
 
-/* .topcontainer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px 300px;
-    grid-template-areas: 
-    "toptext toppic" 
-    "toptext toptext"; */
-}
-
 .toptext {
-    /* grid-area: toptext;
-    display: flex; */
-    display: inline-block;
-    padding: 20px;
-    background-color: #212121;
+    
+
+    background-color: rgba(33, 32, 28, 1);
+    height: 100%;
+    margin: 0px 200px 0px 60px;
+    padding: 40px;
 }
 
 .toppic {
@@ -159,15 +149,41 @@ a {
     width: 50%;
     height: auto;
     float: left;
-    margin: 60px 30px 60px 0px;
+    margin: 60px 0px 60px 0px;
 }
 
-/* History Crap Below -----------------*/
+/* Skills Crap Below -----------------*/
+
+.sec-skills .row {
+}
+
+.row {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.skill {
+    width: 40%;
+    display: flex;
+}
+
+.skillicon {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.flexdown
 
 
 /* Moodboard Crap Below -----------------*/
 
-.row {
+.moodboardrow {
     justify-content: center;
 }
 
