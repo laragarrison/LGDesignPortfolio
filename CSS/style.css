@@ -42,6 +42,10 @@ a {
     
 }
 
+.hide {
+    display: none;
+}
+
 /* Components Below -----------------*/
 
 .backgroundpic {
@@ -60,10 +64,15 @@ a {
     padding-left: 5%;
 }
 
+.boxtrans {
+    width: 100%;
+    background-color: rgba(33, 32, 28, 0.7);
+    margin: 60px auto;
+}
 
-.graybox {
+.boxgrey {
     background-color: #21201c;
-    padding: 20px;
+    padding: 40px;
 }
 
 .button {
@@ -97,6 +106,7 @@ a {
     padding-top: 96px;
     display: block;
     display: flex;
+    align-items: stretch;
 }
 
 .sec-skills {
@@ -135,22 +145,45 @@ a {
 
 /* About Intro Crap Below -----------------*/
 
-.toptext {
-    
-
-    background-color: rgba(33, 32, 28, 1);
-    height: 100%;
-    margin: 0px 200px 0px 60px;
-    padding: 40px;
-}
-
 .toppic {
     /* grid-area: toppic; */
     width: 50%;
-    height: auto;
+    object-fit: cover;
+    height: 60vh;
     float: left;
     margin: 60px 0px 60px 0px;
 }
+
+.sec-aboutintro .boxtrans {
+    height: 100%;
+    width: auto;
+    margin: 0px 7vw 0px 60px;
+    padding: 40px 0px;
+    
+}
+
+.sec-aboutintro .positioner {
+    width: 100%;
+    margin: 60px auto;
+
+}
+
+.sec-aboutintro .headerbar {
+    position: absolute;
+    right: 0px;
+    width: 43%;
+    margin-bottom: 40px;
+}
+
+.sec-aboutintro .boxgrey {
+    margin-top: 100px;
+    padding: 40px;
+    display: inline-block;
+    height: 77%;
+    
+}
+
+
 
 /* Skills Crap Below -----------------*/
 
@@ -167,18 +200,25 @@ a {
 }
 
 .skill {
-    width: 40%;
+    width: 50%;
+    padding: 40px;
     display: flex;
+    align-content: flex-start;
 }
 
-.skillicon {
-    height: 100px;
+.skillname {
+    width: 140px;
+}
+
+.skillname .icon {
+    height: 80px;
     width: auto;
-    margin: auto;
-    margin-bottom: 40px;
+    margin: 20px auto;
 }
 
-.flexdown
+.flexdown {
+    padding-top: 20px;
+}
 
 
 /* Moodboard Crap Below -----------------*/
@@ -231,7 +271,7 @@ a {
 
 }
 
-.sec-interests .graybox {
+.sec-interests .boxgrey {
     width: 100%;
     max-width: 400px;
     height: 50px;
@@ -239,7 +279,7 @@ a {
 
 }
 
-.sec-interests .graybox p {
+.sec-interests .boxgrey p {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -256,7 +296,7 @@ a {
 
 
 
-.interest-grid2 .graybox {
+.interest-grid2 .boxgrey {
     width: 50%;
     max-width: 400px;
     height: 300px;
@@ -264,7 +304,7 @@ a {
 
 }
 
-.interest-grid2 .graybox p {
+.interest-grid2 .boxgrey p {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -291,7 +331,7 @@ a {
 
 /* Listening Crap Below ----------------*/
 
-.sec-listening .graybox {
+.sec-listening .boxgrey {
     margin-top: 40px;
     margin-bottom: 40px;
     max-width: 700px;
@@ -379,11 +419,6 @@ a {
     text-align: center;
 }
 
-.projectbg {
-    width: 100%;
-    background-color: rgba(33, 32, 28, 0.7);
-    margin: 60px auto;
-}
 
 .project {
     width: 70%;
