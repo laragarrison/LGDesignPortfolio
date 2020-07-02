@@ -29,7 +29,13 @@ h2 {    /* bar title, header nav*/
 
 h3 {    /* quotes */
     font-family: Baskerville;
-    font-size: 1.3rem;
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin: 10px auto 20px auto;
+}
+
+h4 {
+
 }
 
 p {    /* text, footer*/
@@ -82,7 +88,7 @@ a {
     height: 60px;
     border-radius: 10px;
     padding: 20px;
-    background-color: green;
+    background-color: #644732;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -149,7 +155,7 @@ a {
     /* grid-area: toppic; */
     width: 50%;
     object-fit: cover;
-    height: 60vh;
+    height: 70vh;
     float: left;
     margin: 60px 0px 60px 0px;
 }
@@ -190,7 +196,7 @@ a {
 .sec-skills .row {
 }
 
-.row {
+.sec-skills .flex {
     width: 70%;
     margin: auto;
     display: flex;
@@ -199,11 +205,16 @@ a {
     justify-content: space-evenly;
 }
 
-.skill {
-    width: 50%;
+.sec-skills .mycard {
+    flex: 1;
     padding: 40px;
-    display: flex;
-    align-content: flex-start;
+    display: block;
+    align-content: space-between;
+}
+
+.skillname h3 {
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
 }
 
 .skillname {
@@ -213,11 +224,36 @@ a {
 .skillname .icon {
     height: 80px;
     width: auto;
-    margin: 20px auto;
+    margin: auto auto 30px auto;
 }
 
 .flexdown {
     padding-top: 20px;
+}
+
+.sec-principles {
+    width: 70%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.letterspacing {
+    letter-spacing: 1px;
+}
+
+.sec-principles .flex {
+    width: 100%;
+    text-align: initial;
+}
+
+.sec-principles .mycard {
+    flex: 0 auto;
+    width: 50%;
+    padding: 30px;
+}
+
+.sec-principles p {
+    margin:10px 0px;
 }
 
 
@@ -462,7 +498,7 @@ a {
 .project h3 {
     font-size: 2.2rem;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-top: 0px;
     
 }
 
