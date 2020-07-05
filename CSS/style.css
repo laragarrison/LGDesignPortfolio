@@ -109,6 +109,7 @@ a {
 }
 
 .sec-aboutintro {
+    height: 100%;
     padding-top: 96px;
     display: block;
     display: flex;
@@ -117,6 +118,7 @@ a {
 
 .sec-skills {
     padding: 70px 0px;
+    background-color: #21201C
 }
 
 .sec-moodboard {
@@ -169,8 +171,9 @@ a {
 }
 
 .sec-aboutintro .positioner {
+    height: auto;
     width: 100%;
-    margin: 60px auto;
+    margin: 60px auto 0px auto;
 
 }
 
@@ -183,11 +186,18 @@ a {
 
 .sec-aboutintro .boxgrey {
     margin-top: 100px;
+    /* margin-bottom: 170px; */
     padding: 40px;
     display: inline-block;
-    height: 77%;
+    height: 82%;
     
 }
+
+/* .sec-aboutintro .boxtrans .positioner {
+    height: 60px;
+    display: inline-block;
+ } */
+
 
 
 
@@ -235,6 +245,7 @@ a {
     width: 70%;
     margin: 60px auto;
     text-align: center;
+    background-color: #383735;
 }
 
 .letterspacing {
