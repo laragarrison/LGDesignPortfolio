@@ -29,13 +29,17 @@ h2 {    /* bar title, header nav*/
 
 h3 {    /* quotes */
     font-family: Baskerville;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 300;
     margin: 10px auto 20px auto;
 }
 
-h4 {
-
+h4 {    /* buttons */
+    font-family: Baskerville;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+    color: white;
 }
 
 p {    /* text, footer*/
@@ -87,11 +91,8 @@ a {
     width: 200px;
     height: 60px;
     border-radius: 10px;
-    padding: 20px;
-    background-color: #644732;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
+    padding: 22px;
+    background-color: greenyellow;
 
 }
 
@@ -102,42 +103,28 @@ a {
     border-bottom: 2px solid #707070;
 }
 
-.socialbutton {
-    display: inline-flex;
-    height: 70px;
-    width: 70px;
-    background-color: rgba(112,112,112, 1);
-    padding: 10px;
-    margin: 0px 6px;
-    border-radius: 0px;
-
-
-}
-
-.linkedin {
-    background-color: #0073b1;
-}
-
-.github {
-    background-color: #6a4ca3;
-}
-
-.twitter {
-    background-color: #1da1f2;
-}
-
-.instagram {
-    background-color: #db5d37;
-}
-
-.socialicon {
+.resumebutton {
+    width: 160px;
     display: block;
-    height: 30px;
-    margin: auto;
+    margin: 40px auto;
+    padding: 17px;
+    background-color: rgb(81 121 78);
+    border-radius: 10px;
+    
 }
 
+.resumebutton h4 {
+    margin: 0px;
+    line-height: 30px;
+    color: white;
 
+}
 
+.resumebutton img {
+    float: left;
+    height: 30px;
+    padding-top: 2px;
+}
 
 /* --------------------------------> ABOUT PAGE <-------------------------------- */
 /* Section Start */
@@ -170,8 +157,8 @@ a {
     margin: 0;
 }
 
-.page-about button {
-    /* background-color: green; */
+.page-about .button {
+    background-color: #6f383c;
 }
 
 .sec-quote1 {     /* specify here to clean up */
@@ -250,7 +237,7 @@ a {
 
 .sec-skills .flex {
     width: 70%;
-    margin: auto;
+    margin: 60px auto;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -281,6 +268,15 @@ a {
 
 .flexdown {
     padding-top: 20px;
+}
+
+.sec-skills .button {
+    margin-bottom: 100px;
+}
+
+.sec-skills .button:hover {
+    background-color: teal;
+    text-decoration: none;
 }
 
 .sec-principles {
@@ -527,6 +523,7 @@ a {
     width: 50%;
     min-height: 100%;
     padding: 60px 30px;
+    position: relative;
 }
 
 .casestudy {
@@ -537,11 +534,27 @@ a {
     border-radius: 20px;
 }
 
+.project .button {
+    position: absolute; 
+    bottom: 20px; 
+    right: 30px;
+}
+
+.bridgehome .button {
+    background-color: rgb(221, 126, 103);
+}
+
 .eeoc {
+    flex-direction: row-reverse;
+}
+
+.eeoc .button {
+    background-color: #195883;
 
 }
 
-.delancey {
+.delancey .button {
+    background-color: rgb(140 68 59);
 
 }
 
@@ -602,17 +615,47 @@ a {
     
 }
 
-.emailbutton h3 {
-    font-size: 1.3rem;
-    letter-spacing: .2rem;
+.emailbutton h4 {
     margin: 0px;
-    color: white;
+    line-height: 25px;
+    letter-spacing: .1rem;
 
 }
 
 .emailbutton img {
     float: left;
     height: 25px;
+}
+.socialbutton {
+    display: inline-flex;
+    height: 70px;
+    width: 70px;
+    background-color: rgba(112,112,112, 1);
+    padding: 10px;
+    margin: 0px 6px;
+    border-radius: 0px;
+}
+
+.linkedin {
+    background-color: #0073b1;
+}
+
+.github {
+    background-color: #6a4ca3;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.instagram {
+    background-color: #cc3158;
+}
+
+.socialicon {
+    display: block;
+    height: 30px;
+    margin: auto;
 }
 
 
@@ -695,9 +738,6 @@ a {
         padding: 30px;
     }
 
-    .reverse {
-        flex-direction: column-reverse;
-    }
 
     .project .half {
         width: 100%;
