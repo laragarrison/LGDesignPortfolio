@@ -12,13 +12,15 @@ body {
 }
 
 
-h1 {    /* im lara*/
+h1 {
+    /* im lara*/
     text-transform: uppercase;
     font-size: 2rem;
 
 }
 
-h2 {    /* bar title, header nav*/
+h2 {
+    /* bar title, header nav*/
     font-size: 1.3rem;
     text-transform: capitalize;
     letter-spacing: 1px;
@@ -27,30 +29,34 @@ h2 {    /* bar title, header nav*/
 
 }
 
-h3 {    /* quotes */
+h3 {
+    /* quotes */
     font-family: Baskerville;
     font-size: 2rem;
     font-weight: 300;
     margin: 10px auto 20px auto;
 }
 
-h4 {    /* buttons */
+h4 {
+    /* buttons */
     font-family: Baskerville;
     font-size: 1.1rem;
     font-weight: 300;
+    line-height: 27px;
+    padding-bottom: 3px;
     text-align: center;
     color: white;
+    margin: 0px;
 }
 
-p {    /* text, footer*/
+p {
+    /* text, footer*/
     font-weight: lighter;
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
-a {
-    
-}
+a {}
 
 .hide {
     display: none;
@@ -91,7 +97,7 @@ a {
     width: 200px;
     height: 60px;
     border-radius: 10px;
-    padding: 22px;
+    padding: 17px;
     background-color: greenyellow;
 
 }
@@ -103,24 +109,12 @@ a {
     border-bottom: 2px solid #707070;
 }
 
-.resumebutton {
+.resumedownload {
     width: 160px;
-    display: block;
-    margin: 40px auto;
-    padding: 17px;
     background-color: rgb(81 121 78);
-    border-radius: 10px;
-    
 }
 
-.resumebutton h4 {
-    margin: 0px;
-    line-height: 30px;
-    color: white;
-
-}
-
-.resumebutton img {
+.resumedownload img {
     float: left;
     height: 30px;
     padding-top: 2px;
@@ -129,7 +123,8 @@ a {
 /* --------------------------------> ABOUT PAGE <-------------------------------- */
 /* Section Start */
 
-.page-about {     /* specify here to clean up */
+.page-about {
+    /* specify here to clean up */
 
 }
 
@@ -157,14 +152,6 @@ a {
     margin: 0;
 }
 
-.page-about .button {
-    background-color: #6f383c;
-}
-
-.sec-quote1 {     /* specify here to clean up */
-
-}
-
 .sec-interests {
     display: block;
     width: 100%;
@@ -172,12 +159,14 @@ a {
     padding: 70px 0px;
 }
 
-.sec-quote2 {     /* specify here to clean up */
+.sec-quote2 {
+    /* specify here to clean up */
 
 }
 
-.sec-listening {     /* specify here to clean up */
-    
+.sec-listening {
+    /* specify here to clean up */
+
 }
 
 /* About Intro Crap Below -----------------*/
@@ -196,7 +185,7 @@ a {
     width: auto;
     margin: 0px 7vw 0px 60px;
     padding: 40px 0px;
-    
+
 }
 
 .sec-aboutintro .positioner {
@@ -219,7 +208,7 @@ a {
     padding: 40px;
     display: inline-block;
     height: 82%;
-    
+
 }
 
 /* .sec-aboutintro .boxtrans .positioner {
@@ -232,8 +221,7 @@ a {
 
 /* Skills Crap Below -----------------*/
 
-.sec-skills .row {
-}
+.sec-skills .row {}
 
 .sec-skills .flex {
     width: 70%;
@@ -270,13 +258,43 @@ a {
     padding-top: 20px;
 }
 
+
+
 .sec-skills .button {
+    background-color: #6f383c;
     margin-bottom: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.sec-skills .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.sec-skills .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 .sec-skills .button:hover {
-    background-color: teal;
-    text-decoration: none;
+    background-color: rgb(81 121 78);
+
+}
+
+.sec-skills .button:hover span {
+    padding-right: 25px;
+}
+
+.sec-skills .button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .sec-principles {
@@ -302,7 +320,7 @@ a {
 }
 
 .sec-principles p {
-    margin:10px 0px;
+    margin: 10px 0px;
 }
 
 
@@ -313,21 +331,21 @@ a {
 }
 
 .cardContainer {
-    
+
     justify-items: center;
     margin: 43px;
     padding: 0px;
-  }
-  
+}
+
 .card {
-  width: 100%;
-  max-width: 260px;
-  max-height: 260px;
-  padding-top: 75%;
-  padding-right: 0px;
-  border: 3px solid gray;
-  background-image: url("../Media/texture-3739393_1920.jpg");
-  }
+    width: 100%;
+    max-width: 260px;
+    max-height: 260px;
+    padding-top: 75%;
+    padding-right: 0px;
+    border: 3px solid gray;
+    background-image: url("../Media/texture-3739393_1920.jpg");
+}
 
 
 /* Quote 1 Crap Below ----------------*/
@@ -368,7 +386,8 @@ a {
     width: 100%;
     margin: auto;
     text-align: center;
-    line-height: 45px; /*to center vertically, should approx equal container height */
+    line-height: 45px;
+    /*to center vertically, should approx equal container height */
 
 }
 
@@ -393,7 +412,8 @@ a {
     width: 100%;
     margin: auto;
     text-align: center;
-    line-height: 45px; /*to center vertically, should approx equal container height */
+    line-height: 45px;
+    /*to center vertically, should approx equal container height */
 
 }
 
@@ -467,9 +487,7 @@ a {
 /* --------------------------------> WORK PAGE <-------------------------------- */
 /* Section Start */
 
-.page-work {
-    
-}
+.page-work {}
 
 .trees {
     background-image: url(../Media/bgwork.jpg);
@@ -488,7 +506,8 @@ a {
 .pic-workintro {
     width: 60%;
     float: right;
-    opacity: 0.39;;
+    opacity: 0.39;
+    ;
 
 }
 
@@ -534,10 +553,65 @@ a {
     border-radius: 20px;
 }
 
+/* .tag {
+    display: inline-block;
+    background-color: green;
+    border: 2px gray solid;
+    border-radius: 6px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px;
+} */
+.tags {
+    padding: 15px;
+}
+
+.tag {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    margin: 0 22px 8px 0;
+    padding: 0 10px 0 12px;
+    background: #777;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tag:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-color: transparent #777 transparent transparent;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+}
+
+.tag:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    float: left;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: black;
+}
+
+
 .project .button {
-    position: absolute; 
-    bottom: 20px; 
+    position: absolute;
+    bottom: 20px;
     right: 30px;
+    margin-top: 20px;
 }
 
 .bridgehome .button {
@@ -564,15 +638,17 @@ a {
 }
 
 .project h3 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 300;
     margin-top: 0px;
-    
+    margin-bottom: 10px;
+
 }
 
 .project p {
     margin-left: 0px;
 }
+
 /* --------------------------------> CONTACT PAGE <-------------------------------- */
 /* Section Start */
 
@@ -584,8 +660,10 @@ a {
 .sky {
     background-image: url(../Media/bgcontact2.jpg);
     background-repeat: no-repeat;
-    background-position: center; /* Center the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
 }
 
 .sec-contactinfo {
@@ -602,9 +680,7 @@ a {
     padding: 15px;
 }
 
-.contactinfo2 {
-
-}
+.contactinfo2 {}
 
 .emailbutton {
     width: 100%;
@@ -612,7 +688,7 @@ a {
     padding: 20px;
     background-color: rgba(41, 73, 111, 1);
     border-radius: 10px;
-    
+
 }
 
 .emailbutton h4 {
@@ -626,11 +702,12 @@ a {
     float: left;
     height: 25px;
 }
+
 .socialbutton {
     display: inline-flex;
     height: 70px;
     width: 70px;
-    background-color: rgba(112,112,112, 1);
+    background-color: rgba(112, 112, 112, 1);
     padding: 10px;
     margin: 0px 6px;
     border-radius: 0px;
@@ -667,7 +744,7 @@ a {
 /* Navigation Crap Below ----------------*/
 
 .navbar {
-    background-color:#21201C;
+    background-color: #21201C;
     position: fixed;
     width: 100%;
 }
@@ -681,18 +758,12 @@ a {
     margin-left: auto;
 }
 
-
-.footer {
-    position: absolute;
-    width: 100%;
-}
-
 .navlogo {
     height: 60px;
     width: 60px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    
+
 }
 
 #navbar-brand {
@@ -701,32 +772,42 @@ a {
     letter-spacing: 2px;
     font-size: 1.6rem;
     color: white;
-    
+
 }
 
 .icon {
     width: 30px;
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  #content-wrap {
-    padding-bottom: 100px;    /* Footer height */
-  }
-  
-  #footer {
-    position: absolute;
+.footer2 {
     width: 100%;
-    height: 100px;           /* Footer height */
-    bottom: 0px;
+    padding: 40px 15%;
+    background-color: #21201c;
+    text-align: center;
 }
 
-.contactfix #footer {
-    bottom: -100px;
-  }
+.footer2 .flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer2 .card {
+    width: 200px;
+
+}
+
+.footer2 p {
+    color: grey;
+}
+
+.footer2 a {
+    color: white
+}
+
+.footer2 .dash {
+    margin-top: 20px;
+}
 
 /* --------------------------------> MEDIA QUERIES GODDAMNIT <-------------------------------- */
 /* Section Start */
