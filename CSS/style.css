@@ -4,62 +4,76 @@
 /* Definitions Crap Below ----------------*/
 
 body {
-    color: whitesmoke;
+    color: white;
     height: auto;
     background-color: #383735;
     font-family: 'Hind Madurai', sans-serif;
-    letter-spacing: .5px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
-
-h1 {
-    /* im lara*/
-    text-transform: uppercase;
+ h1 {
+    font-family: 'Lora', serif;
     font-size: 2rem;
+    font-weight: 400;
 
 }
 
 h2 {
-    /* bar title, header nav*/
+    font-family: 'Lora', serif;
     font-size: 1.3rem;
     text-transform: capitalize;
-    letter-spacing: 1px;
-    font-weight: lighter;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    margin-top: 0px;
     margin-bottom: 0px;
 
 }
 
 h3 {
-    /* quotes */
-    font-family: Baskerville;
-    font-size: 2rem;
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
     font-weight: 300;
-    margin: 10px auto 20px auto;
+    margin: 10px auto 20px auto; 
 }
 
 h4 {
-    /* buttons */
-    font-family: Baskerville;
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 27px;
-    padding-bottom: 3px;
-    text-align: center;
-    color: white;
-    margin: 0px;
+
 }
 
 p {
-    /* text, footer*/
-    font-weight: lighter;
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
-a {}
+a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+.textitalic {
+    font-style: italic;
+}
+
+.textgrey {
+    color: grey;
+}
 
 .hide {
     display: none;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+
+}
+
+.card {
+    padding: 20px;
 }
 
 /* Components Below -----------------*/
@@ -95,11 +109,31 @@ a {}
     display: block;
     margin: 40px auto;
     width: 200px;
-    height: 60px;
     border-radius: 10px;
     padding: 17px;
-    background-color: greenyellow;
+    background-color: rgb(60 97 63);
+    transition: all 0.5s;
+    cursor: pointer;
+}
 
+.button p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0px;
+    font-family: 'Lora', serif;
+
+}
+
+
+
+.button:hover {
+    background-color: rgb(77 125 81);
+    text-decoration: none;
 }
 
 .dash {
@@ -112,6 +146,7 @@ a {}
 .resumedownload {
     width: 160px;
     background-color: rgb(81 121 78);
+    margin: 40px auto 10px auto;
 }
 
 .resumedownload img {
@@ -145,11 +180,11 @@ a {}
     background-color: #21201C
 }
 
-.sec-moodboard {
-    background-color: #21201C;
-    padding: 60px 0px;
-
-    margin: 0;
+.sec-principles {
+    width: 70%;
+    margin: 60px auto;
+    text-align: center;
+    background-color: #383735;
 }
 
 .sec-interests {
@@ -159,8 +194,11 @@ a {}
     padding: 70px 0px;
 }
 
-.sec-quote2 {
-    /* specify here to clean up */
+.sec-quote {
+
+}
+
+.sec-images {
 
 }
 
@@ -196,28 +234,21 @@ a {}
 }
 
 .sec-aboutintro .headerbar {
-    position: absolute;
-    right: 0px;
-    width: 43%;
-    margin-bottom: 40px;
+    float: right;
+    width: 80%;
+    margin-top: 40px;
+    /* margin-left: auto;
+    margin-bottom: 40px; */
 }
 
 .sec-aboutintro .boxgrey {
-    margin-top: 100px;
+    margin-top: 0px;
     /* margin-bottom: 170px; */
     padding: 40px;
     display: inline-block;
-    height: 82%;
+    height: auto;
 
 }
-
-/* .sec-aboutintro .boxtrans .positioner {
-    height: 60px;
-    display: inline-block;
- } */
-
-
-
 
 /* Skills Crap Below -----------------*/
 
@@ -226,22 +257,18 @@ a {}
 .sec-skills .flex {
     width: 70%;
     margin: 60px auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-evenly;
 }
 
-.sec-skills .mycard {
+.sec-skills .card {
     flex: 1;
     padding: 40px;
     display: block;
     align-content: space-between;
 }
 
-.skillname h3 {
-    font-size: 1.3rem;
+.skillname h2 {
     letter-spacing: .2rem;
+    text-transform: uppercase;
 }
 
 .skillname {
@@ -261,10 +288,7 @@ a {}
 
 
 .sec-skills .button {
-    background-color: #6f383c;
     margin-bottom: 100px;
-    transition: all 0.5s;
-    cursor: pointer;
 }
 
 .sec-skills .button span {
@@ -283,11 +307,6 @@ a {}
     transition: 0.5s;
 }
 
-.sec-skills .button:hover {
-    background-color: rgb(81 121 78);
-
-}
-
 .sec-skills .button:hover span {
     padding-right: 25px;
 }
@@ -297,12 +316,7 @@ a {}
     right: 0;
 }
 
-.sec-principles {
-    width: 70%;
-    margin: 60px auto;
-    text-align: center;
-    background-color: #383735;
-}
+/* Principles -----------------*/
 
 .letterspacing {
     letter-spacing: 1px;
@@ -310,13 +324,12 @@ a {}
 
 .sec-principles .flex {
     width: 100%;
-    text-align: initial;
 }
 
-.sec-principles .mycard {
+.sec-principles .card {
     flex: 0 auto;
-    width: 50%;
-    padding: 30px;
+    max-width: 400px;
+    text-align: left;
 }
 
 .sec-principles p {
@@ -324,164 +337,64 @@ a {}
 }
 
 
-/* Moodboard Crap Below -----------------*/
+/* Quote Crap Below ----------------*/
 
-.moodboardrow {
-    justify-content: center;
-}
-
-.cardContainer {
-
-    justify-items: center;
-    margin: 43px;
-    padding: 0px;
-}
-
-.card {
-    width: 100%;
-    max-width: 260px;
-    max-height: 260px;
-    padding-top: 75%;
-    padding-right: 0px;
-    border: 3px solid gray;
-    background-image: url("../Media/texture-3739393_1920.jpg");
-}
-
-
-/* Quote 1 Crap Below ----------------*/
-
-.sec-quote1 h3 {
+.sec-quote h3 {
     display: block;
     text-align: center;
     width: 70%;
     min-width: 300px;
     margin: auto;
     padding: 70px 0;
+    letter-spacing: 0.5px;
 }
 
-.quotefrom {
+.sec-quote .italic {
+    width: 70%;
+    margin-right: auto;
     text-align: right;
-    font-style: italic;
 }
 
 /* Interests Crap Below ----------------*/
 
-.interest-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;
-
-}
 
 .sec-interests .boxgrey {
-    width: 100%;
-    max-width: 400px;
-    height: 50px;
-    margin: auto;
-
-}
-
-.sec-interests .boxgrey p {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    line-height: 45px;
-    /*to center vertically, should approx equal container height */
-
-}
-
-/* experimental 2nd grid------------------ */
-
-.interest-grid2 {
-    display: flex;
-    align-items: center;
-}
-
-
-
-.interest-grid2 .boxgrey {
-    width: 50%;
-    max-width: 400px;
+    min-width: 70%;
+    max-width: 90%;
     height: 300px;
-    margin: 10px 10px;
-
-}
-
-.interest-grid2 .boxgrey p {
-    width: 100%;
     margin: auto;
-    text-align: center;
-    line-height: 45px;
-    /*to center vertically, should approx equal container height */
 
-}
-
-.interestcategory {
-    width: 80%;
-    border-bottom: 3px solid #383735;
-    margin: 0px auto;
-}
-
-/* Quote 2 Crap Below ----------------*/
-
-.sec-quote2 h3 {
-    display: block;
-    text-align: center;
-    width: 70%;
-    min-width: 300px;
-    margin: auto;
-    padding: 70px 0;
 }
 
 /* Listening Crap Below ----------------*/
 
-.sec-listening .boxgrey {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    max-width: 700px;
-    display: flex;
+.sec-listening .flex {
+    justify-content: center;
 }
 
-.albuminfo {
-    width: 100%;
+.sec-listening .boxgrey {
     display: flex;
     flex-direction: column;
+    min-width: 250px;   
+    margin: 0px 40px;
     text-align: center;
-    margin: 50px;
+    /* max-width: 700px; */
+}
+
+.sec-listening .positioner {
+    width: 60px;
+    height: auto;
 }
 
 
 .sec-listening p {
-    width: 166px;
+    max-width: 200px;
+    margin: auto;
     padding: 5px;
 }
 
-.albumcontainer {
-    background-color: #B2B2B2;
-    border: 3px solid #383735;
-    padding: 10px;
-    border-radius: 20px;
-    width: 200px;
+.sec-listening img {
     height: 200px;
-    margin: 5px auto 5px auto;
-}
-
-.music {
-    background-image: url(../Media/ninalbum.jpg);
-    background-size: contain;
-    height: 190px;
-    align-self: center;
-    justify-self: center;
-}
-
-.book {
-    background-image: url(../Media/bookcover.jpg);
-    height: 182px;
-    background-size: contain;
-    align-self: center;
-    justify-self: center;
-
 }
 
 /* --------------------------------> WORK PAGE <-------------------------------- */
@@ -553,15 +466,6 @@ a {}
     border-radius: 20px;
 }
 
-/* .tag {
-    display: inline-block;
-    background-color: green;
-    border: 2px gray solid;
-    border-radius: 6px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    padding: 4px;
-} */
 .tags {
     padding: 15px;
 }
@@ -613,16 +517,16 @@ a {}
     right: 30px;
     margin-top: 20px;
 }
-
+/* 
 .bridgehome .button {
     background-color: rgb(221, 126, 103);
-}
+} */
 
 .eeoc {
     flex-direction: row-reverse;
 }
 
-.eeoc .button {
+/* .eeoc .button {
     background-color: #195883;
 
 }
@@ -630,16 +534,10 @@ a {}
 .delancey .button {
     background-color: rgb(140 68 59);
 
-}
+} */
 
-.project h2 {
-    font-size: 1rem;
-    color: #707070;
-}
-
-.project h3 {
+.project h1 {
     font-size: 1.9rem;
-    font-weight: 300;
     margin-top: 0px;
     margin-bottom: 10px;
 
@@ -747,6 +645,9 @@ a {}
     background-color: #21201C;
     position: fixed;
     width: 100%;
+    height: 96px;
+    display: flex;
+    align-content: center;
 }
 
 .navbar a {
@@ -779,40 +680,47 @@ a {}
     width: 30px;
 }
 
-.footer2 {
-    width: 100%;
+.footer {
     padding: 40px 15%;
     background-color: #21201c;
     text-align: center;
 }
 
-.footer2 .flex {
-    display: flex;
+.footer .flex {
     justify-content: space-between;
     text-align: left;
 }
 
-.footer2 .card {
-    width: 200px;
-
-}
-
-.footer2 p {
+.footer p {
     color: grey;
 }
 
-.footer2 a {
-    color: white
-}
-
-.footer2 .dash {
+.footer .dash {
     margin-top: 20px;
 }
 
 /* --------------------------------> MEDIA QUERIES GODDAMNIT <-------------------------------- */
 /* Section Start */
 
+@media only screen and (max-width: 1250px) {
+
+    .sec-principles .card {
+        max-width: 100%;
+
+    }
+}
+
 @media only screen and (max-width: 1000px) {
+
+    .sec-principles .card {
+        width: 100%;
+
+    }
+
+    .sec-listening .positioner {
+        width: 100%;
+        height: 40px;
+    }
 
     .project {
         flex-direction: column;
