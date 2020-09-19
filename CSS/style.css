@@ -383,7 +383,7 @@ section {
     margin: 0px;
     padding: 8px 8px 8px 20px;
     background-color: rgba(33, 32, 28, 0.8);
-    z-index: 1000;
+    z-index: 2;
 }
 
 /* Listening Crap Below ----------------*/
@@ -435,17 +435,14 @@ section {
 /* --------------------------------> WORK PAGE <-------------------------------- */
 /* Section Start */
 
-.page-work {}
-
 .trees {
     background-image: url(../Media/bgwork.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 .sec-projects {
-    padding: 40px 0px 40px 0px;
+    padding: 136px 0px 40px 0px;
 
 }
 
@@ -669,11 +666,12 @@ section {
 /* Section Start */
 
 .navbar {
-    background-color: #21201C;
     position: fixed;
+    z-index: 10;
+    display: flex;
     width: 100%;
     height: 96px;
-    display: flex;
+    background-color: #21201C;
     align-items: center;
     justify-items: center;
 }
