@@ -40,7 +40,7 @@
 
 <body>
 
-    <nav class="navbar">
+    <!-- <nav class="navbar hide">
         <img class="navlogo" src="Media/logo 1.png" alt="Logo with initials.">
         <a id="navbar-brand" href="laragarrison.com">Lara Garrison</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -54,14 +54,22 @@
                 <a class="nav-item nav-link" href="Contact/contact.html">Contact</a>
             </div>
         </div>
+    </nav> -->
+    <nav class="navbar">
+        <img class="lglogo" src="Media/logo 1.png">
+        <a id="lgname" href="laragarrison.com">Lara Garrison</a>
+            <div class="navlinks">
+                <a class="textgrey" href="index.html">About</a>
+                <a href="Work/work.html">Work</a>
+                <a href="Contact/contact.html">Contact</a>
+            </div>
+        </div>
     </nav>
 
 
 
 
-    <section class="page-about">
-
-        <div class="wood sec-aboutintro">
+        <section class="wood sec-aboutintro">
             <img class="toppic" src="Media/mesnow.jpg" alt="Lara on snowy train in mountains.">
             <div class="positioner">
                 <div class="headerbar">
@@ -95,18 +103,16 @@
                     <div class="positioner"></div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="sec-skills">
+        <section class="sec-skills">
             <div class="flex">
                 <div class="card">
                     <div class="skillname">
-                        <img class="icon" src="Media/iconresearch.png"
+                        <img src="Media/iconresearch.png"
                             alt="Competitor analysis by Yu luck from the Noun Project">
                         <h2>RESEARCH</h2>
-                    </div>
-                    <div class="flexdown">
                         <p>Research</p>
                         <p>User Research</p>
                         <p>Competitor Analysis</p>
@@ -114,11 +120,9 @@
                 </div>
                 <div class="card">
                     <div class="skillname">
-                        <img class="icon" src="Media/iconanalysis.png"
+                        <img src="Media/iconanalysis.png"
                             alt="analyze by pictohaven from the Noun Project">
                         <h2>ANALYSIS</h2>
-                    </div>
-                    <div class="flexdown">
                         <p>Analysis</p>
                         <p>Scenario Inquiry</p>
                         <p>Information Architecture</p>
@@ -128,11 +132,9 @@
                 <div class="card">
                     <div class="skillname">
 
-                        <img class="icon" src="Media/iconprototyping.png"
+                        <img src="Media/iconprototyping.png"
                             alt="Communication by Flatart from the Noun Project">
                         <h2>PROTOTYPING</h2>
-                    </div>
-                    <div class="flexdown">
                         <p>Prototyping</p>
                         <p>Style Guides</p>
                         <p>User Testing</p>
@@ -141,10 +143,8 @@
                 <div class="card">
                     <div class="skillname">
 
-                        <img class="icon" src="Media/icontools.png" alt="programming by Eucalyp from the Noun Project">
+                        <img src="Media/icontools.png" alt="programming by Eucalyp from the Noun Project">
                         <h2>TOOLS</h2>
-                    </div>
-                    <div class="flexdown">
                         <p>Adobe XD</p>
                         <p>InVision</p>
                         <p>Google Suite</p>
@@ -158,7 +158,7 @@
 
 
 
-            <div class="boxgrey sec-principles">
+            <section class="boxgrey sec-principles">
                 <p class="letterspacing"> SYSTEMS THINKER • STRATEGIC EMPATH • HUMAN BEHAVIORAL ECOLOGIST • ENFP
                     💃</p>
                 <p class="hide"> 🔮🕸• 🪐 4w5 Sx/So • 🌊 SAILOR</p>
@@ -188,10 +188,10 @@
                             ourselves. Being wise pays higher dividends than being right.</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
 
-        <div class="sec-interests wood">
+        <section class="sec-interests wood">
             <div class="headerbar">
                 <h2>Influences on Work</h2>
             </div>
@@ -213,24 +213,48 @@
                         Jungian Cognitive Function Theory as tools for personal growth and team alignment.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="sec-quote">
+        <section class="sec-quote">
             <h3>
                 The whole thinking process is still rather mysterious to us, but I believe that the attempt to
                 make a thinking machine will help us greatly in finding out how we think ourselves. <br><br>
                 <span class="textitalic">- Alan Turing, BBC Radio 1951 </span>
             </h3>
-        </div>
+        </section>
 
-        <div class="sec-listening backgroundpic wood">
+        <section class="sec-images">
+            <div class="flex">
+                <div class="card">
+                    <img src="./Media/hobbycooking.jpg">
+                    <div class="headerbar">
+                        <p>Cook & Hostess</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Media/Artboard 2.png">
+                    <div class="headerbar">
+                        <p>Tallship Sailor</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Media/hobbyroadtripping.jpg">
+                    <div class="headerbar">
+                        <p>Solo Roadtrip Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="sec-listening backgroundpic wood">
             <div class="boxtrans">
                 <div class="flex">
                     <div class="boxgrey">
-                        <h2>Listening to:</h2>
+                        <h2>Listening:</h2>
                         <a href="https://www.youtube.com/watch?v=MSsqYCetNGY" target=”_blank”><img
                                 src="./Media/ninalbum.jpg" alt="Album Cover"></a>
-                        <p>Satellite</p>
+                        <p><span>Satellite</span></p>
                         <p class="textitalic">Nine Inch Nails</p>
                     </div>
                     <div class="positioner"></div>
@@ -238,16 +262,14 @@
                         <h2> Reading:</h2>
                         <a href="https://www.amazon.com/Thoughtful-Foragers-Prehistoric-Decision-Archaeology/dp/052110288X"
                             target=”_blank”><img src="./Media/bookcover.jpg" alt="Book Cover"></a>
-                        <p>Thoughtful Foragers:
-                            A Study of Prehistoric Decision Making</p>
+                        <p><span>Thoughtful Foragers:
+                            A Study of Prehistoric Decision Making</span></p>
                         <p class="textitalic">Steven J. Mithen</p>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </section>
-
+        </section>
     <section class="footer">
         <div class="flex">
             <div>
@@ -263,7 +285,7 @@
                 <a href="https://case-study-delancey.webflow.io/">Download</a>
             </div>
             <div>
-                <p>Reach Out</p>
+                <p>Get In Touch</p>
                 <a href="mailto:lara@laragarrison.com">lara@laragarrison.com</a>
             </div>
         </div>

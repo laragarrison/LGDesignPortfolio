@@ -10,9 +10,10 @@ body {
     font-family: 'Hind Madurai', sans-serif;
     font-weight: 300;
     letter-spacing: 0.5px;
+    margin: 0px;
 }
 
- h1 {
+h1 {
     font-family: 'Lora', serif;
     font-size: 2rem;
     font-weight: 400;
@@ -34,12 +35,10 @@ h3 {
     font-family: 'Lora', serif;
     font-size: 1.3rem;
     font-weight: 300;
-    margin: 10px auto 20px auto; 
+    margin: 10px auto 20px auto;
 }
 
-h4 {
-
-}
+h4 {}
 
 p {
     margin-block-start: 0;
@@ -47,7 +46,7 @@ p {
 }
 
 a {
-    
+
     text-decoration: none;
     color: white;
 }
@@ -66,14 +65,21 @@ a {
 
 .flex {
     display: flex;
+    margin: auto;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-evenly;
+    /* align-items: center;
+    justify-items: center; */
 
 }
 
 .card {
     padding: 20px;
+}
+
+section {
+    padding: 100px 0px;
 }
 
 /* Components Below -----------------*/
@@ -97,7 +103,6 @@ a {
 .boxtrans {
     width: 100%;
     background-color: rgba(33, 32, 28, 0.7);
-    margin: 60px auto;
 }
 
 .boxgrey {
@@ -159,8 +164,7 @@ a {
 /* Section Start */
 
 .page-about {
-    /* specify here to clean up */
-
+    /* unneccesary? */
 }
 
 .wood {
@@ -169,14 +173,14 @@ a {
 
 .sec-aboutintro {
     height: 100%;
-    padding-top: 96px;
+    /* padding-top: 96px; */
     display: block;
     display: flex;
     align-items: stretch;
 }
 
 .sec-skills {
-    padding: 70px 0px;
+    /* padding: 70px 0px; */
     background-color: #21201C
 }
 
@@ -191,21 +195,16 @@ a {
     display: block;
     width: 100%;
     height: auto;
-    padding: 70px 0px;
 }
 
-.sec-quote {
-
-}
+.sec-quote {}
 
 .sec-images {
+    background-color: rgba(33, 32, 28, 1);
 
 }
 
-.sec-listening {
-    /* specify here to clean up */
-
-}
+.sec-listening {}
 
 /* About Intro Crap Below -----------------*/
 
@@ -256,36 +255,29 @@ a {
 
 .sec-skills .flex {
     width: 70%;
-    margin: 60px auto;
 }
 
 .sec-skills .card {
     flex: 1;
-    padding: 40px;
-    display: block;
-    align-content: space-between;
+    max-width: 300px;
+    margin: 40px;
 }
 
 .skillname h2 {
     letter-spacing: .2rem;
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .skillname {
     width: 140px;
 }
 
-.skillname .icon {
+.skillname img {
     height: 80px;
     width: auto;
     margin: auto auto 30px auto;
 }
-
-.flexdown {
-    padding-top: 20px;
-}
-
-
 
 .sec-skills .button {
     margin-bottom: 100px;
@@ -336,25 +328,6 @@ a {
     margin: 10px 0px;
 }
 
-
-/* Quote Crap Below ----------------*/
-
-.sec-quote h3 {
-    display: block;
-    text-align: center;
-    width: 70%;
-    min-width: 300px;
-    margin: auto;
-    padding: 70px 0;
-    letter-spacing: 0.5px;
-}
-
-.sec-quote .italic {
-    width: 70%;
-    margin-right: auto;
-    text-align: right;
-}
-
 /* Interests Crap Below ----------------*/
 
 
@@ -366,6 +339,53 @@ a {
 
 }
 
+/* Quote Crap Below ----------------*/
+
+.sec-quote h3 {
+    display: block;
+    text-align: center;
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    letter-spacing: 0.5px;
+}
+
+.sec-quote .italic {
+    width: 70%;
+    margin-right: auto;
+    text-align: right;
+}
+
+/* Imagecarousel Crap Below ----------------*/
+
+
+.sec-images .flex {
+    flex-direction: row;
+}
+
+.sec-images .card {
+    position: relative;
+    padding: 0px;
+
+}
+
+.sec-images img {
+    object-fit: fill;
+    width: 480px;
+    height: 270px;
+}
+
+.sec-images .headerbar {
+    border: none;
+    width: 60%;
+    position: absolute;
+    bottom: 25px;
+    margin: 0px;
+    padding: 8px 8px 8px 20px;
+    background-color: rgba(33, 32, 28, 0.8);
+    z-index: 1000;
+}
+
 /* Listening Crap Below ----------------*/
 
 .sec-listening .flex {
@@ -375,10 +395,9 @@ a {
 .sec-listening .boxgrey {
     display: flex;
     flex-direction: column;
-    min-width: 250px;   
+    width: 300px;
     margin: 0px 40px;
     text-align: center;
-    /* max-width: 700px; */
 }
 
 .sec-listening .positioner {
@@ -386,15 +405,31 @@ a {
     height: auto;
 }
 
+.sec-listening h2 {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #707070;
+    margin-bottom: 20px;
+
+    /* font-size: 1.2rem; */
+    /* text-transform: uppercase; */
+    /* font-family: 'Hind Madurai', sans-serif; */
+}
 
 .sec-listening p {
-    max-width: 200px;
+    max-width: 300px;
     margin: auto;
     padding: 5px;
 }
 
+.sec-listening span {
+    font-weight: 500;
+}
+
 .sec-listening img {
-    height: 200px;
+    height: 120px;
+    margin: 20px auto;
 }
 
 /* --------------------------------> WORK PAGE <-------------------------------- */
@@ -410,17 +445,7 @@ a {
 }
 
 .sec-projects {
-    padding: 126px 0px 40px 0px;
-
-}
-
-/* Work Intro Crap Below ----------------*/
-
-.pic-workintro {
-    width: 60%;
-    float: right;
-    opacity: 0.39;
-    ;
+    padding: 40px 0px 40px 0px;
 
 }
 
@@ -433,6 +458,10 @@ a {
     padding: 10px;
     margin-top: -20px;
     text-align: center;
+}
+
+.sec-projects .boxtrans {
+    margin: 60px auto;
 }
 
 .sec-projects .headerbar {
@@ -475,7 +504,7 @@ a {
     height: 24px;
     line-height: 24px;
     position: relative;
-    margin: 0 22px 8px 0;
+    margin: 0 27px 13px 0;
     padding: 0 10px 0 12px;
     background: #777;
     border-bottom-right-radius: 4px;
@@ -483,7 +512,6 @@ a {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     color: black;
     font-size: 0.8rem;
-    font-weight: bold;
 }
 
 .tag:before {
@@ -517,7 +545,8 @@ a {
     right: 30px;
     margin-top: 20px;
 }
-/* 
+
+/*
 .bridgehome .button {
     background-color: rgb(221, 126, 103);
 } */
@@ -578,8 +607,6 @@ a {
     padding: 15px;
 }
 
-.contactinfo2 {}
-
 .emailbutton {
     width: 100%;
     display: block;
@@ -589,10 +616,12 @@ a {
 
 }
 
-.emailbutton h4 {
+.emailbutton p {
     margin: 0px;
+    font-size: 1.1rem;
     line-height: 25px;
-    letter-spacing: .1rem;
+    letter-spacing: .2rem;
+    text-transform: lowercase;
 
 }
 
@@ -639,15 +668,14 @@ a {
 /* --------------------------------> NAV CRAP <-------------------------------- */
 /* Section Start */
 
-/* Navigation Crap Below ----------------*/
-
 .navbar {
     background-color: #21201C;
     position: fixed;
     width: 100%;
     height: 96px;
     display: flex;
-    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .navbar a {
@@ -655,29 +683,27 @@ a {
     margin: 0px 25px;
 }
 
-.navbar-nav {
+.navlinks {
     margin-left: auto;
 }
 
-.navlogo {
+.navlinks a {}
+
+.lglogo {
     height: 60px;
     width: 60px;
-    margin: 10px;
+    margin: 18px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 
 }
 
-#navbar-brand {
+#lgname {
     font-family: baskerville;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 1.6rem;
     color: white;
 
-}
-
-.icon {
-    width: 30px;
 }
 
 .footer {
@@ -699,7 +725,7 @@ a {
     margin-top: 20px;
 }
 
-/* --------------------------------> MEDIA QUERIES GODDAMNIT <-------------------------------- */
+/* --------------------------------> MEDIA QUERIES <-------------------------------- */
 /* Section Start */
 
 @media only screen and (max-width: 1250px) {
@@ -733,4 +759,11 @@ a {
         padding: 30px;
     }
 
+}
+
+@media only screen and (max-width: 720px) {
+
+    #lgname {
+        display: none;
+    }
 }
