@@ -167,20 +167,16 @@ section {
     /* unneccesary? */
 }
 
-.wood {
-    background-image: url(../Media/bgabout.jpg);
-}
-
 .sec-aboutintro {
+    background-image: url(../Media/bgabout.jpg);
     height: 100%;
-    /* padding-top: 96px; */
+    padding-bottom: 0px;
     display: block;
     display: flex;
     align-items: stretch;
 }
 
 .sec-skills {
-    /* padding: 70px 0px; */
     background-color: #21201C
 }
 
@@ -192,6 +188,7 @@ section {
 }
 
 .sec-interests {
+    background-image: url(../Media/bgabout.jpg);
     display: block;
     width: 100%;
     height: auto;
@@ -204,12 +201,17 @@ section {
 
 }
 
-.sec-listening {}
+.sec-listening {
+    background-image: url(../Media/bgabout.jpg);
+}
 
 /* About Intro Crap Below -----------------*/
 
-.toppic {
-    /* grid-area: toppic; */
+.sec-aboutintro .flex {
+    flex-wrap: nowrap;
+}
+
+.aboutpic {
     width: 50%;
     object-fit: cover;
     height: 70vh;
@@ -218,17 +220,11 @@ section {
 }
 
 .sec-aboutintro .boxtrans {
-    height: 100%;
+    height: calc(70vh + 60px);
     width: auto;
-    margin: 0px 7vw 0px 60px;
-    padding: 40px 0px;
-
-}
-
-.sec-aboutintro .positioner {
-    height: auto;
-    width: 100%;
-    margin: 60px auto 0px auto;
+    position: relative;
+    top: 60px;
+    margin: 0px 60px;
 
 }
 
@@ -236,16 +232,13 @@ section {
     float: right;
     width: 80%;
     margin-top: 40px;
-    /* margin-left: auto;
-    margin-bottom: 40px; */
 }
 
 .sec-aboutintro .boxgrey {
+    height: calc(70vh - 236px);
     margin-top: 0px;
-    /* margin-bottom: 170px; */
     padding: 40px;
     display: inline-block;
-    height: auto;
 
 }
 
@@ -330,13 +323,20 @@ section {
 
 /* Interests Crap Below ----------------*/
 
+.sec-interests .project {
+    height: auto;
+    min-height: fit-content;
+    padding: 30px;
+}
 
-.sec-interests .boxgrey {
-    min-width: 70%;
-    max-width: 90%;
-    height: 300px;
-    margin: auto;
+.sec-interests img {
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+}
 
+.sec-interests .positioner {
+    margin: 30px;
 }
 
 /* Quote Crap Below ----------------*/
@@ -728,6 +728,10 @@ section {
 
 @media only screen and (max-width: 1250px) {
 
+    .sec-aboutintro .flex {
+        flex-wrap: wrap;
+    }
+    
     .sec-principles .card {
         max-width: 100%;
 
