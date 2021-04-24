@@ -249,7 +249,13 @@ section {
 .sec-skills .row {}
 
 .sec-skills .flex {
-    width: 70%;
+    width: 90%;
+    justify-content: center;
+
+}
+
+.sec-skills .subflex {
+    display: flex;
 }
 
 .sec-skills .card {
@@ -266,6 +272,7 @@ section {
 
 .skillname {
     width: 140px;
+    margin: auto;
 }
 
 .skillname img {
@@ -328,13 +335,15 @@ section {
 .sec-interests .project {
     height: auto;
     min-height: fit-content;
+    justify-content: center;
     padding: 30px;
 }
 
 .sec-interests img {
     height: 150px;
     width: 150px;
-    margin: 30px;
+    margin: 30px auto;
+    justify-self: center;
 }
 
 .sec-interests .positioner {
@@ -367,13 +376,15 @@ section {
 .sec-images .card {
     position: relative;
     padding: 0px;
+    min-width: 200px;
 
 }
 
 .sec-images img {
     object-fit: fill;
-    width: 480px;
-    height: 270px;
+    min-width: 200px;
+    max-width: 480px;
+    max-height: 270px;
 }
 
 .sec-images .headerbar {
@@ -733,11 +744,38 @@ section {
     .sec-aboutintro .flex {
         flex-wrap: wrap;
     }
+
+    .sec-aboutintro .aboutpic {
+        height: 40vh;
+        width: 90%;
+        margin-bottom: 0px;
+    }
+
+    .sec-aboutintro .spacer {
+        display: block;
+        height: 60px;
+    }
+
+    .sec-aboutintro .boxtrans {
+        height: auto;
+        width: 90%;
+        margin: auto;
+        margin-top: 60px;
+        padding-bottom: 60px;
+        position: static;         
+        
+    }
+
+    .sec-aboutintro .boxgrey {
+        height: auto;
+    }
     
     .sec-principles .card {
         max-width: 100%;
 
     }
+
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -745,6 +783,10 @@ section {
     .sec-principles .card {
         width: 100%;
 
+    }
+
+    .sec-interests .reverse {
+        flex-direction: column-reverse;
     }
 
     .sec-listening .positioner {
@@ -769,5 +811,9 @@ section {
 
     #lgname {
         display: none;
+    }
+
+    .sec-skills .subflex {
+        flex-direction: column;
     }
 }
