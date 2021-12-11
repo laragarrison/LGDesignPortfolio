@@ -271,7 +271,7 @@ section {
 }
 
 .skillname {
-    width: 140px;
+    width: 180px;
     margin: auto;
 }
 
@@ -321,7 +321,6 @@ section {
 }
 
 .sec-principles .card {
-    flex: 0 auto;
     max-width: 400px;
     text-align: left;
 }
@@ -693,6 +692,7 @@ section {
     background-color: #21201C;
     align-items: center;
     justify-items: center;
+    padding: 0px;
 }
 
 .navbar a {
@@ -782,7 +782,7 @@ section {
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
 
     .sec-principles .card {
         width: 100%;
@@ -817,7 +817,7 @@ section {
         display: none;
     }
 
-    .sec-skills .subflex {
+    .subflex {
         flex-direction: column;
     }
 }
