@@ -784,7 +784,7 @@ section {
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1090px) {
 
     .sec-principles .card {
         width: 100%;
@@ -801,14 +801,20 @@ section {
     }
 
     .project {
+        width: 85%;
         flex-direction: column;
         padding: 30px;
     }
 
 
     .project .half {
-        width: 100%;
+        width: 85%;
         padding: 30px;
+        margin: auto;
+    }
+
+    .project .button {
+        position: unset;
     }
 
 }
