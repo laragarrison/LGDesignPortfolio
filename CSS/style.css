@@ -448,6 +448,7 @@ section {
 
 .trees {
     background-image: url(../Media/bgwork.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -598,11 +599,12 @@ section {
 
 .sky {
     background-image: url(../Media/bgcontact2.jpg);
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
     background-repeat: no-repeat;
     background-position: center;
     /* Center the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
+   
 }
 
 .sec-contactinfo {
