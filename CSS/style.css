@@ -804,12 +804,12 @@ section {
     .project {
         width: 85%;
         flex-direction: column;
-        padding: 30px;
+        padding: 0px;
     }
 
 
     .project .half {
-        width: 85%;
+        width: auto;
         padding: 30px;
         margin: auto;
     }
